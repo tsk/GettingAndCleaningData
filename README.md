@@ -15,4 +15,5 @@ Coursera - Getting and Cleaning Data Course Project
 9. Extract the columns for the means and standard deviation from our tidy data set to create the mean+std data set
 10. Create a tidy data set that containts the average of each variable for each activity and each subject. 
 11. Save the Data Sets to disk
+12. Create a more compact (221kb) tidy data avg data set to upload to coursera project page.
 

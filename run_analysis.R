@@ -51,6 +51,12 @@ m_melt <- melt(tidy_data,id=c('subject.id','activity'),measure.vars=measurments)
 tidy_data_avg <- dcast(m_melt,subject.id+activity~measurments,mean)
 
 #Saving Data
-
 write.table(tidy_data_m_std,"tidy_data_mean_std.txt",sep="\t")
 write.table(tidy_data_avg,"tidy_data_avg.txt",sep="\t")
+
+#Save a more compact tidy_data_avg to upload
+measurments_c <- names(tidy_data_m_std)[-c(1,2)]
+m_melt_c <- melt(tidy_data_m_std,id=c('subject.id','activity'),measure.vars=measurments)
+tidy_data_avg_c <- dcast(m_melt,subject.id+activity~measurments,mean)
+
+write.table(tidy_data_avg_c,"tidy_data_avg_c.txt",sep="\t")

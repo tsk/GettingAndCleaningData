@@ -43,7 +43,7 @@ The signals are the same as the original Data Set:
 - fBodyGyroMag
 - fBodyGyroJerkMag
 
-But we only use he set of variables:
+But we only use the set of variables:
 
 - mean(): Mean value
 - std(): Standar deviation
